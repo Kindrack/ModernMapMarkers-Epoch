@@ -804,11 +804,11 @@ local function CreateMapPin(x, y, size, texture, tooltipText, tooltipInfo, atlas
         this.highlight:SetAlpha(0)
     end)
     pin:SetScript("OnClick", function()
-        if this.markerKind == "worldboss" then
+        if this.markerKind == "worldboss" or this.markerKind == "pvp" then
             OnWorldBossClick()
         elseif this.markerKind == "boat" or this.markerKind == "zepp"
             or this.markerKind == "tram" or this.markerKind == "portal"
-            or this.markerKind == "pvp" or this.markerKind == "flightpath" then
+            or this.markerKind == "flightpath" then
             OnTransportClick()
         elseif this.atlasID then
             OnAtlasClick()
@@ -899,6 +899,7 @@ local function UpdateMarkers()
     local showTrams        = db.showTrams
     local showPortals      = db.showPortals
     local showPvP          = db.showPvP
+    local pvpFaction       = db.pvpFaction
     local showFlightPaths  = db.showFlightPaths
     local transportFaction = db.transportFaction
     local portalFaction    = db.portalFaction
@@ -958,8 +959,8 @@ local function UpdateMarkers()
             texture = texPortal
         elseif kind == "pvp" then
             shouldDisplay = showPvP
-            if shouldDisplay and transportFaction ~= "all" then
-                shouldDisplay = (info == transportFaction) or (info == "Neutral")
+            if shouldDisplay and pvpFaction ~= "all" then
+                shouldDisplay = (info == pvpFaction) or (info == "Neutral")
             end
             texture = texPvp
         elseif kind == "flightpath" then
@@ -1047,6 +1048,7 @@ local DEFAULTS = {
     showTrams          = true,
     showPortals        = true,
     showPvP            = true,
+    pvpFaction         = "all",
     showFlightPaths    = true,
     transportFaction   = "all",
     portalFaction      = "all",

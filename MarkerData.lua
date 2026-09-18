@@ -114,9 +114,12 @@ MMM_DefaultPoints = {
     {"Teldrassil", 0.552, 0.949, "Boat to Auberdine", "boat", "Alliance", nil, "Darkshore"},
 
     -- PvP Vendors
-    {"Ogrimmar", 0.93, 0.54, "PvP Vendors", "pvp", "Horde", "15 to 55 PvP Gear", nil, "Ogrimmar"},
-    {"Ogrimmar", 0.336, 0.369, "Warmode Supplies", "pvp", "Horde", "Epochpvpworld", nil, "Ogrimmar"},
-    {"Ogrimmar", 0.399, 0.696, "PvP Halls - Honor/Conquest Gear", "pvp", "Horde", "EPOCHPVPSETMENU", nil, "Ogrimmar"},
+    {"Ogrimmar", 0.93, 0.54, "PvP Vendors - 15 to 55 Gear & Supplies", "pvp", "Horde", "PVPMENU"},
+    {"Ogrimmar", 0.336, 0.369, "Warmode Supplies", "pvp", "Horde", "Epochpvpworld"},
+    {"Ogrimmar", 0.399, 0.696, "PvP Halls - 55 to 60 Gear & Supplies", "pvp", "Horde", "PVPMENU"},
+    {"Barrens", 0.467, 0.085, "PvP Vendors - 15 to 55 Gear & Supplies", "pvp", "Horde", "PVPMENU"},
+    {"Ashenvale", 0.616, 0.841, "PvP Vendors - 15 to 55 Gear & Supplies", "pvp", "Alliance", "PVPMENU"},
+
 
     -- Portals
 --    {"Darnassis", 0.405, 0.817, "Portal to Blasted Lands", "portal", "Alliance", nil, "BlastedLands"},
@@ -182,9 +185,9 @@ MMM_DefaultPoints = {
     {"Stranglethorn", 0.312, 0.298, "Zeppelins to Tirisfal Glades & Orgrimmar", "zepp", "Horde", nil, {"Tirisfal", "Ogrimmar"}},
 
     -- PvP Vendor
-    {"Stormwind", 0.216, 0.562, "PvP Vendors", "pvp", "15 to 55 PvP Gear", "EPOCHPVPSETMENU", nil, "Stormwind"},
-    {"Stormwind", 0.350, 0.462, "Warmode Supplies", "pvp", "Alliance", "Epochpvpworld", nil, "Stormwind"},
-    {"Stormwind", 0.750, 0.646, "PvP Halls - Honor/Conquest Gear", "pvp", "Alliance", "EPOCHPVPSETMENU", nil, "Stormwind"},
+    {"Stormwind", 0.216, 0.562, "PvP Vendors - 15 to 55 Gear and Supplies", "pvp", "Alliance", "PVPMENU"},
+    {"Stormwind", 0.350, 0.462, "Warmode Supplies", "pvp", "Alliance", "Epochpvpworld"},
+    {"Stormwind", 0.750, 0.646, "PvP Halls - 55 to 60 Gear & Supplies", "pvp", "Alliance", "PVPMENU"},
 
     -- Portals
 --    {"Undercity", 0.852, 0.17, "Portal to Blasted Lands", "portal", "Horde", nil, "BlastedLands"},
