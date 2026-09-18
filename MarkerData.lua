@@ -130,7 +130,7 @@ MMM_DefaultPoints = {
     -- -------------------------------------------------------------------------
 
     -- Dungeons
-	{"TolBarad", 0.483, 0.491, "Baradin Hold", "dungeon", "57-60", "BaradinHold", "dropdown"},
+	{"TolBarad", 0.483, 0.491, "Baradin Hold", "dungeon", "57-60", "BaradinHold"},
     {"SearingGorge", 0.387, 0.833, "Blackrock Depths\n|cFF808080(Searing Gorge)|r", "dungeon", "52-60", "BlackrockDepths", "dropdown"},
     {"BurningSteppes", 0.328, 0.365, "Blackrock Depths\n|cFF808080(Burning Steppes)|r", "dungeon", "52-60", "BlackrockDepths", "dropdown"},
     {"Westfall", 0.423, 0.726, "The Deadmines", "dungeon", "17-24", "TheDeadmines"},
@@ -168,8 +168,8 @@ MMM_DefaultPoints = {
     -- World Bosses
 --    {"Duskwood", 0.465, 0.357, "Emerald Dragon\n|cFF808080(The Twilight Grove)|r", "worldboss", "60", nil},
 --    {"Hinterlands", 0.632, 0.217, "Emerald Dragon\n|cFF808080(Seradane)|r", "worldboss", "60", nil},
-	{"BurningSteppes", 0.719, 0.380, "Volchan", "worldboss", "60", "Volchan", "dropdown"},
-	{"BlastedLands", 0.355, 0.752, "Lord Kazzak", "worldboss", "60", "LordKazzak" },
+	{"BurningSteppes", 0.719, 0.380, "Volchan", "worldboss", "60", "Volchan"},
+	{"BlastedLands", 0.355, 0.752, "Lord Kazzak", "worldboss", "60", "LordKazzak"},
 
     -- Transport
     {"Arathi", 0.312, 0.819, "Tol Barad (Flight Path)", "flightpath", "57-60", nil, "TolBarad"},
