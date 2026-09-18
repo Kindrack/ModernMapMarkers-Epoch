@@ -119,9 +119,9 @@ MMM_DefaultPoints = {
     {"Ogrimmar", 0.399, 0.696, "PvP Halls - Honor/Conquest Gear", "pvp", "Horde", "EPOCHPVPSETMENU", nil, "Ogrimmar"},
 
     -- Portals
-    {"Darnassis", 0.405, 0.817, "Portal to Blasted Lands", "portal", "Alliance", nil, "BlastedLands"},
-    {"Ogrimmar", 0.381, 0.857, "Portal to Blasted Lands", "portal", "Horde", nil, "BlastedLands"},
-    {"ThunderBluff", 0.232, 0.135, "Portal to Blasted Lands\n|cFF808080(Inside The Pools of Vision)|r", "portal", "Horde", nil, "BlastedLands"},
+--    {"Darnassis", 0.405, 0.817, "Portal to Blasted Lands", "portal", "Alliance", nil, "BlastedLands"},
+--    {"Ogrimmar", 0.381, 0.857, "Portal to Blasted Lands", "portal", "Horde", nil, "BlastedLands"},
+--    {"ThunderBluff", 0.232, 0.135, "Portal to Blasted Lands\n|cFF808080(Inside The Pools of Vision)|r", "portal", "Horde", nil, "BlastedLands"},
     -- -------------------------------------------------------------------------
     -- Eastern Kingdoms
     -- -------------------------------------------------------------------------
@@ -187,9 +187,9 @@ MMM_DefaultPoints = {
     {"Stormwind", 0.750, 0.646, "PvP Halls - Honor/Conquest Gear", "pvp", "Alliance", "EPOCHPVPSETMENU", nil, "Stormwind"},
 
     -- Portals
-    {"Undercity", 0.852, 0.17, "Portal to Blasted Lands", "portal", "Horde", nil, "BlastedLands"},
-    {"Stormwind", 0.490, 0.873, "Portal to Blasted Lands", "portal", "Alliance", nil, "BlastedLands"},
-    {"Ironforge", 0.272, 0.07, "Portal to Blasted Lands", "portal", "Alliance", nil, "BlastedLands"},
+--    {"Undercity", 0.852, 0.17, "Portal to Blasted Lands", "portal", "Horde", nil, "BlastedLands"},
+--    {"Stormwind", 0.490, 0.873, "Portal to Blasted Lands", "portal", "Alliance", nil, "BlastedLands"},
+--    {"Ironforge", 0.272, 0.07, "Portal to Blasted Lands", "portal", "Alliance", nil, "BlastedLands"},
 }
 
 -- WDM points intentionally omitted in the PE refactor (see design doc).
