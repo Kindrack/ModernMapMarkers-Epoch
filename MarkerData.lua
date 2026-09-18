@@ -13,7 +13,7 @@
 --              may contain an embedded comment after \n
 --              example: "Gnomeregan\n|cFF808080(Workshop Entrance)|r"
 --              the comment is shown as a second line in the Find Marker panel
---   type     : "dungeon", "raid", "worldboss", "boat", "zepp", "tram" & "portal"
+--   type     : "dungeon", "raid", "worldboss", "boat", "zepp", "tram", "portal" and "pvp"
 --   info     : level range, examples: "52-60" or "80"
 --              faction string: "Alliance", "Horde" & "Neutral"
 --              nil for non-combat world bosses handled separately
@@ -67,15 +67,16 @@ MMM_DefaultPoints = {
     -- -------------------------------------------------------------------------
     -- Kalimdor
     -- -------------------------------------------------------------------------
+
     -- Dungeons
     -- Dire Maul, Old Hillsbrad, The Black Morass, and The Culling of
     -- Stratholme are NOT in PE Atlas (no AtlasMaps entry) so atlasID=nil;
     -- they still show as pins but clicking them won't open Atlas.
     {"Ashenvale", 0.123, 0.128, "Blackfathom Deeps", "dungeon", "24-32", "BlackfathomDeeps"},
 --    {"Feralas", 0.648, 0.303, "Dire Maul - East", "dungeon", "55-58", nil},
- --   {"Feralas", 0.771, 0.369, "Dire Maul - East\n|cFF808080(The Hidden Reach)|r", "dungeon", "55-58", nil},
- --   {"Feralas", 0.671, 0.34, "Dire Maul - East\n|cFF808080(Side Entrance)|r", "dungeon", "55-58", nil},
- --   {"Feralas", 0.624, 0.249, "Dire Maul - North", "dungeon", "57-60", nil},
+--    {"Feralas", 0.771, 0.369, "Dire Maul - East\n|cFF808080(The Hidden Reach)|r", "dungeon", "55-58", nil},
+--    {"Feralas", 0.671, 0.34, "Dire Maul - East\n|cFF808080(Side Entrance)|r", "dungeon", "55-58", nil},
+--    {"Feralas", 0.624, 0.249, "Dire Maul - North", "dungeon", "57-60", nil},
 --    {"Feralas", 0.604, 0.311, "Dire Maul - West", "dungeon", "57-60", nil},
     {"Desolace", 0.29, 0.629, "Maraudon", "dungeon", "46-55", "Maraudon"},
     {"Ogrimmar", 0.53, 0.486, "Ragefire Chasm", "dungeon", "13-18", "RagefireChasm"},
@@ -83,19 +84,22 @@ MMM_DefaultPoints = {
     {"Barrens", 0.423, 0.9, "Razorfen Kraul", "dungeon", "29-38", "RazorfenKraul"},
     {"Barrens", 0.462, 0.357, "Wailing Caverns", "dungeon", "17-24", "WailingCaverns"},
     {"Tanaris", 0.389, 0.184, "Zul'Farrak", "dungeon", "44-54", "ZulFarrak"},
-  --  {"Tanaris", 0.650, 0.458, "Old Hillsbrad Foothills", "dungeon", "66-70", nil},
- --   {"Tanaris", 0.685, 0.48, "The Black Morass", "dungeon", "68-70", nil},
- --   {"Tanaris", 0.678, 0.512, "The Culling of Stratholme", "dungeon", "75-80", nil},
+--    {"Tanaris", 0.650, 0.458, "Old Hillsbrad Foothills", "dungeon", "66-70", nil},
+--    {"Tanaris", 0.685, 0.48, "The Black Morass", "dungeon", "68-70", nil},
+--    {"Tanaris", 0.678, 0.512, "The Culling of Stratholme", "dungeon", "75-80", nil},
+
     -- Raids
     -- Onyxia's Lair, AQ20/AQ40, and Hyjal Summit are not in PE Atlas.
     {"Dustwallow", 0.529, 0.777, "Onyxia's Lair", "raid", "60", "OnyxiaTrash"},
 --    {"Silithus", 0.305, 0.987, "Ruins of Ahn'Qiraj", "raid", "60", nil},
 --    {"Silithus", 0.269, 0.987, "Temple of Ahn'Qiraj", "raid", "60", nil},
- --   {"Tanaris", 0.67, 0.45, "Hyjal Summit", "raid", "70", nil},
+--    {"Tanaris", 0.67, 0.45, "Hyjal Summit", "raid", "70", nil},
+
     -- World Bosses
-    {"Aszhara", 0.535, 0.816, "Azuregos", "worldboss", "60", nil},
+--    {"Aszhara", 0.535, 0.816, "Azuregos", "worldboss", "60", nil},
 --    {"Ashenvale", 0.937, 0.355, "Emerald Dragon\n|cFF808080(Bough Shadow)|r", "worldboss", "60", nil},
-  --  {"Feralas", 0.512, 0.108, "Emerald Dragon\n|cFF808080(Dream Bough)|r", "worldboss", "60", nil},
+--    {"Feralas", 0.512, 0.108, "Emerald Dragon\n|cFF808080(Dream Bough)|r", "worldboss", "60", nil},
+
     -- Transport
     -- PE places the Horde zeppelin towers inside Orgrimmar (Valley of
     -- Winds), not on the WotLK platform NW of the city in Durotar.
@@ -108,10 +112,12 @@ MMM_DefaultPoints = {
     {"Feralas", 0.311, 0.395, "Boat to Forgotten Coast", "boat", "Alliance", nil, "Feralas"},
     {"Feralas", 0.431, 0.428, "Boat to Sardor Isle", "boat", "Alliance", nil, "Feralas"},
     {"Teldrassil", 0.552, 0.949, "Boat to Auberdine", "boat", "Alliance", nil, "Darkshore"},
-    --PvP Vendors
+
+    -- PvP Vendors
     {"Ogrimmar", 0.93, 0.54, "PvP Vendors", "pvp", "Horde", "15 to 55 PvP Gear", nil, "Ogrimmar"},
     {"Ogrimmar", 0.336, 0.369, "Warmode Supplies", "pvp", "Horde", "Epochpvpworld", nil, "Ogrimmar"},
     {"Ogrimmar", 0.399, 0.696, "PvP Halls - Honor/Conquest Gear", "pvp", "Horde", "EPOCHPVPSETMENU", nil, "Ogrimmar"},
+
     -- Portals
     {"Darnassis", 0.405, 0.817, "Portal to Blasted Lands", "portal", "Alliance", nil, "BlastedLands"},
     {"Ogrimmar", 0.381, 0.857, "Portal to Blasted Lands", "portal", "Horde", nil, "BlastedLands"},
@@ -119,9 +125,8 @@ MMM_DefaultPoints = {
     -- -------------------------------------------------------------------------
     -- Eastern Kingdoms
     -- -------------------------------------------------------------------------
+
     -- Dungeons
-    {"Arathi", 0.312, 0.819, "Tol Barad (Flight Path)", "flightpath", "57-60", nil, "TolBarad"},
-	{"TolBarad", 0.326, 0.576, "Faldir Cove (Flight Path)", "flightpath", "57-60", nil, "Arathi"},
 	{"TolBarad", 0.483, 0.491, "Baradin Hold", "dungeon", "57-60", "BaradinHold", "dropdown"},
     {"SearingGorge", 0.387, 0.833, "Blackrock Depths\n|cFF808080(Searing Gorge)|r", "dungeon", "52-60", "BlackrockDepths", "dropdown"},
     {"BurningSteppes", 0.328, 0.365, "Blackrock Depths\n|cFF808080(Burning Steppes)|r", "dungeon", "52-60", "BlackrockDepths", "dropdown"},
@@ -145,6 +150,7 @@ MMM_DefaultPoints = {
     {"BurningSteppes", 0.312, 0.365, "Upper Blackrock Spire\n|cFF808080(Burning Steppes)|r", "dungeon", "55-60", "BlackrockSpireUpper", "dropdown"},
     {"SearingGorge", 0.371, 0.833, "Upper Blackrock Spire\n|cFF808080(Searing Gorge)|r", "dungeon", "55-60", "BlackrockSpireUpper", "dropdown"},
     {"Stranglethorn", 0.420, 0.460, "Glittermurk Mines", "dungeon", "34-40", "GlittermurkMines"},
+
     -- Raids
     -- Blackwing Lair, Zul'Gurub, and Karazhan are not in PE Atlas; they
     -- still pin on the map but do not open an Atlas page on click.
@@ -155,12 +161,16 @@ MMM_DefaultPoints = {
 --    {"Stranglethorn", 0.53, 0.172, "Zul'Gurub", "raid", "60", nil},
 --    {"DeadwindPass", 0.469, 0.747, "Karazhan", "raid", "70", nil},
 --    {"DeadwindPass", 0.467, 0.708, "Karazhan\n|cFF808080(Side Entrance)|r", "raid", "70", nil},
+
     -- World Bosses
 --    {"Duskwood", 0.465, 0.357, "Emerald Dragon\n|cFF808080(The Twilight Grove)|r", "worldboss", "60", nil},
 --    {"Hinterlands", 0.632, 0.217, "Emerald Dragon\n|cFF808080(Seradane)|r", "worldboss", "60", nil},
 	{"BurningSteppes", 0.719, 0.380, "Volchan", "worldboss", "60", "Volchan", "dropdown"},
-	{ "BlastedLands", 0.355, 0.752, "Lord Kazzak", "worldboss", "60", "LordKazzak" },
+	{"BlastedLands", 0.355, 0.752, "Lord Kazzak", "worldboss", "60", "LordKazzak" },
+
     -- Transport
+    {"Arathi", 0.312, 0.819, "Tol Barad (Flight Path)", "flightpath", "57-60", nil, "TolBarad"},
+	{"TolBarad", 0.326, 0.576, "Faldir Cove (Flight Path)", "flightpath", "57-60", nil, "Arathi"},
     {"Stormwind", 0.677, 0.325, "Tram to Ironforge", "tram", "Alliance", nil, "Ironforge"},
     {"Ironforge", 0.762, 0.511, "Tram to Stormwind", "tram", "Alliance", nil, "Stormwind"},
     {"Wetlands", 0.051, 0.634, "Boat to Theramore Isle", "boat", "Alliance", nil, "Dustwallow"},
@@ -170,10 +180,12 @@ MMM_DefaultPoints = {
     {"Stranglethorn", 0.257, 0.73, "Boat to Ratchet", "boat", "Neutral", nil, "Barrens"},
     {"Tirisfal", 0.606, 0.583, "Zeppelins to Orgrimmar & Grom'Gol", "zepp", "Horde", nil, {"Ogrimmar", "Stranglethorn"}},
     {"Stranglethorn", 0.312, 0.298, "Zeppelins to Tirisfal Glades & Orgrimmar", "zepp", "Horde", nil, {"Tirisfal", "Ogrimmar"}},
-    --PvP Vendor
+
+    -- PvP Vendor
     {"Stormwind", 0.216, 0.562, "PvP Vendors", "pvp", "15 to 55 PvP Gear", "EPOCHPVPSETMENU", nil, "Stormwind"},
     {"Stormwind", 0.350, 0.462, "Warmode Supplies", "pvp", "Alliance", "Epochpvpworld", nil, "Stormwind"},
     {"Stormwind", 0.750, 0.646, "PvP Halls - Honor/Conquest Gear", "pvp", "Alliance", "EPOCHPVPSETMENU", nil, "Stormwind"},
+
     -- Portals
     {"Undercity", 0.852, 0.17, "Portal to Blasted Lands", "portal", "Horde", nil, "BlastedLands"},
     {"Stormwind", 0.490, 0.873, "Portal to Blasted Lands", "portal", "Alliance", nil, "BlastedLands"},
